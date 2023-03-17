@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const xhr2 = require('xhr2')
 const fetchIP = require('./fetchIP')
+const ipLookup = require('./ipLookup')
+require("dotenv").config();
 
 app.set('port', process.env.PORT || 8000)
 /*
@@ -14,6 +16,7 @@ app.get('/', function(req, res) {
 })
 
 app.use('/fetchIP', fetchIP)
+app.use('/ipLookup', ipLookup)
 
 app.listen(app.get('port'), function() {
     console.log("Node app is running at localhost:" + app.get('port'))
