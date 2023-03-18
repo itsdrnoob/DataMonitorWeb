@@ -1,7 +1,7 @@
 [![Platform](https://shields.io/badge/platform-web-red.svg)]()
 [![License](https://img.shields.io/badge/license-GPL3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Chat](https://img.shields.io/badge/Telegram%20Chat-blue?logo=telegram)](https://t.me/datamonitor)
-[![Status](https://img.shields.io/website?down_message=Offline&label=Status&logoColor=white&up_message=Online&url=https%3A%2F%2Fdatamonitorweb.vercel.app)](https://t.me/datamonitor)
+[![Status](https://img.shields.io/website?down_message=Offline&label=Status&logoColor=white&up_message=Online&url=https%3A%2F%2Fdatamonitorweb.vercel.app)](https://datamonitorweb.vercel.app/)
 
 # Data Monitor Web
 ## Introduction
