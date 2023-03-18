@@ -11,7 +11,7 @@ const apiLimit = rateLimit({
 })
 
 router.get('/', apiLimit, function(req, res) {
-    var token = req.query.token
+    var token = req.get('token')
     if (token == process.env.TOKEN) {
         const ipinfo = new IPinfoWrapper(process.env.IP_TOKEN)
         var clientIP = requestIP.getClientIp(req)
