@@ -8,9 +8,10 @@ html, body {
     max-height: 100%;
     margin: 0 auto;
     max-width: 100;
-    background-repeat: no-repeat;
     background-position: right, top;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
