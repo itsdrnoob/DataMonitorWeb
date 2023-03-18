@@ -132,6 +132,7 @@ html, body {
     .download .banner {
         display: flex;
         flex-direction: column;
+        margin-left: 0;
     }
 
     .banner a img {
