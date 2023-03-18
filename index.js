@@ -11,8 +11,10 @@ Returns the real IP address even if behind proxy
 */
 app.set('trust proxy', true)
 
+app.use(express.static(__dirname + '/public'))
+
 app.get('/', function(req, res) {
-    res.status(200).send("Nothing to see here")
+    res.sendFile('./public/index.html')
 })
 
 app.use('/fetchIP', fetchIP)
