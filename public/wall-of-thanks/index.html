@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href= "./favicon.png" type="image/x-icon" style="width: 100%; height: 100%">
+        <link rel="stylesheet" type="text/css" href="/wall-of-thanks/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <title>Wall of Thanks</title>
+    </head>
+    <body>
+        <div class="header">
+            <!-- Home button here -->
+            <a href="https://datamonitorweb.vercel.app/">
+                <div class="home-btn">
+                    <img src="/wall-of-thanks/ic_arrow_back.svg" alt="Back Arrow Icon">
+                    <p class="home-btn-text">Home</p>
+                </div>
+            </a>
+        </div>
+        <div class="content">
+            <p class="title">Wall of Thanks</p>
+            <p class="content-text-main">
+                Thank you for your interest in <b>Data Monitor</b>! Our app relies on the support of our users to continue development and we are grateful for every donation we receive. To show our appreciation, we have created a Wall of Thanks page to recognize our donors.
+            </p>
+
+            <p class="subtitle">• What is Wall of Thanks?</p>
+            <p class="content-text">
+                The Wall of Thanks is a special page within our app that displays the list of users who have generously contributed to our development efforts. It's not a virtual space, but it's definitely a virtual hug from us to you.
+            </p>
+
+            <p class="subtitle">• How can I be included on the Wall of Thanks?</p>
+            <p class="content-text">
+                With the Google play variant, when you donate through the app, you'll have the option to submit your name and a photo. We'll take care of the rest and add you to the Wall of Thanks.<br>
+                If you're donating through other means (PayPal, Crypto etc.), just send us an <a href="mailto:bitroid.dev@gmail.com?subject=Wall%20of%20Thanks">email</a> and we'll take care of it.<br><br>
+                One thing to note - if you've already donated and is not on the Wall of Thanks or would like to remove yourself from the Wall of Thanks for any reason, just send us an <a href="mailto:bitroid.dev@gmail.com?subject=Wall%20of%20Thanks">email</a> and we'll take care of it right away.
+            </p>
+
+            <p class="subtitle">• Why should I donate?</p>
+            <p class="content-text">
+                We're not going to beg you or bribe you with a puppy 🐶 (even though puppies are really cute). We'll just say that your donation helps us keep the app free and continue to improve it. And, of course, it means a lot to us to have your support, and every donation, no matter how small, makes a difference.
+            </p>
+
+            <p class="subtitle">• Where can I donate?</p>
+            <p class="content-text">
+                We've made the process as simple as possible. Just navigate to <strong>Settings > Donate</strong> and you'll be greeted with a list of donations options.<br>
+                If you're using the Play store variant of the app, you can donate from the app itself. Pretty easy right?<br>
+                You can also view all donation options <a href="https://github.com/itsdrnoob/DataMonitor#support" target="_blank">here</a>.
+            </p>
+
+            <p class="content-text-bottom">
+                Thanks for being a part of our community and for considering supporting us. We can't wait to add you to our Wall of Thanks and give you a virtual high-five!
+            </p>
+        </div>
+
+        <hr>
+        <div class="footer">
+            <p>With ❤️ by Bitroid | © 2023</p>
+        </div>
+    </body>
+
+    <script>
+        let lastScrollPosition = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            const currentScrollPosition = window.pageYOffset;
+            const headerHeight = header.offsetHeight;
+
+            if (currentScrollPosition > lastScrollPosition) {
+                if (currentScrollPosition > lastScrollPosition) {
+                    header.style.top = `-${headerHeight}px`;
+                }
+                else {
+                    header.style.top = '0';
+                }
+            }
+            else {
+                header.style.top = '0';
+            }
+
+            lastScrollPosition = currentScrollPosition;
+        });
+
+    </script>
+</html>
