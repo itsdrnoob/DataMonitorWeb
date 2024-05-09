@@ -18,7 +18,7 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-left: 8%;
+    margin: 0 8%;
 }
   
 .container > .header {
@@ -85,11 +85,10 @@ html, body {
 
 .download .banner {
     display: block;
-    margin-left: -20px;
 }
 
 .banner a img {
-    width: 25%;
+    width: 240px;
 }
 
 .footer p {
@@ -137,6 +136,6 @@ html, body {
     }
 
     .banner a img {
-        width: 50%;
+        width: 200px;
     }
 }
